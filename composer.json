@@ -1,0 +1,28 @@
+{
+    "name": "cherif/new_project",
+    "autoload": {
+        "psr-4": {
+            "Cherif\\NewProject\\": "src/",
+            "App\\Core\\":"App/core/",
+            "App\\Core\\Abstract\\":"App/core/abstract/",
+            "App\\Src\\Entity\\":"src/entity/",
+            "App\\Src\\Controller\\":"src/controller/",
+            "App\\Src\\Repository\\":"src/repository/",
+            "App\\Src\\Service\\":"src/service/"
+            
+        }
+    },
+    "authors": [
+        {
+            "name": "brahim1205",
+            "email": "sadiocheri11@gmail.com"
+        }
+    ],
+    "require": 
+    {},
+
+    "scripts": {
+        "database:migrate": "php migrations/migration.php",
+        "database:seed": "php seeders/seeder.php"
+    }
+}
