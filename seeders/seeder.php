@@ -3,8 +3,8 @@
 $host = 'localhost';
 $user = 'pguser';
 $password = 'pgpassword';
-$dbname = 'wanedb'; // 🔄 corrigé ici pour correspondre au fichier migrated
-$port = 5432;
+$dbname = 'wanedb'; 
+$port = 5433;
 
 try {
     $pdo = new PDO("pgsql:host=$host;port=$port;dbname=$dbname", $user, $password);
